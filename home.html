@@ -1,5 +1,176 @@
-<h1>Brian's Website</h1>
+	<!DOCTYPE html>
+	<html>
+	<head>
+	<title>Brian Krane | Analytics Professional - Sports & Outdoor Lover</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+	* {
+	  box-sizing: border-box;
+	}
+	.footer {
+	   position: fixed;
+	   left: 0;
+	   bottom: 0;
+	   width: 100%;
+	   background-color: red;
+	   color: white;
+	   text-align: center;
+	}
 
-<h3>Gone WERE the Terrirtory Days. Here are the Pandematory Days!</h3>
+	.topbar {
+		height:			80px;
+		background: 	linear-gradient(to bottom right, rgb(200, 200, 200), rgb(100, 100, 100));
+	}
 
-<p>Long after the territories have gone away, professional wrestling had evolved into a worldwide enterprise. Thanks to a modern day pandemic, travel has been restricted giving way to a new form of wrestling territories.</p>
+	.topphrase {
+		font-family:	courier;
+		font-size:		40px;
+		color:			rgb(255, 255, 255);
+		padding-top:	35px;
+		padding-right:	40px;
+		float: 			right;
+	}
+
+	/* this is for the sticky nav*/
+	
+	#myTopnav {
+	    list-style-type:	none;
+		margin:				0;
+		padding:			0;
+	    /*overflow: 			hidden;*/
+	    background-color: 	rgb(100, 100, 100);
+	    font-size: 0;
+		position: sticky;
+		    top: 0;
+		    width: 100%;
+	}
+
+	li {
+	    display: 	inline-block;
+	}
+
+	li a.active {
+		background-color: 	rgb(30, 65, 95);
+	}
+
+	li a, .dropbtn {
+	    display:			inline-block;
+	    color:				white;
+	    text-align:			center;
+	    padding:			14px 16px;
+	    text-decoration:	none;
+		min-width:150px;
+		max-width:200px;
+	    font-size: initial;
+	}
+
+	li a:hover, .dropdown:hover .dropbtn {
+	    background-color:	rgb(30, 65, 95);
+	}
+
+	.dropdown {
+	    display:	inline-block;
+		position:	relative;
+	}
+
+	.dropdown-content {
+	    display: 			none;
+	    position: 			absolute;
+	    background-color: 	rgb(255, 255, 255);
+	    width: 				160px;
+	    box-shadow: 		5px 10px 10px rgba(0,0,0,0.3);
+		z-index: 			1;
+	}
+
+	.dropdown-content a {
+	    color: 				black;
+	    padding: 			12px 16px;
+	    text-decoration: 	none;
+	    display: 			block;
+	    text-align: 		left;
+		width:				128px;
+		z-index: 			1;
+	}
+
+	.dropdown-content a:hover {
+		background-color: 	rgb(140, 185, 220);
+	}
+
+	.dropdown:hover .dropdown-content {
+	    display:	block;
+	}
+
+	/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+	.sticky {
+	  position: fixed;
+	  top: 0;
+	  width: 100%
+	}
+
+/* This is for the mobile friendly nav */
+	
+
+	</style>
+	</head>
+	<body style="font-family:Verdana;">
+
+	<div class="topbar">
+		<div class="topphrase">bkrane.com</div>
+	</div>
+	
+	<ul class="topnav" id="myTopnav">
+		<li><a class="active" href="">Home</a></li>
+		<li class="dropdown">
+			<a class="dropbtn" href="javascript:void(0)">Sports</a>
+			<div class="dropdown-content">
+				<a href="#">Link 1</a>
+				<a href="#">Link 2</a>
+				<a href="#">Link 3</a>
+			</div>
+		</li>		<li class="dropdown">
+			<a class="dropbtn" href="javascript:void(0)">Music</a>
+			<div class="dropdown-content">
+				<a href="#">Link 1</a>
+				<a href="#">Link 2</a>
+				<a href="#">Link 3</a>
+			</div>
+		</li>		<li class="dropdown">
+			<a class="dropbtn" href="javascript:void(0)">Pop Culture</a>
+			<div class="dropdown-content">
+				<a href="#">Link 1</a>
+				<a href="#">Link 2</a>
+				<a href="#">Link 3</a>
+			</div>
+		</li>		<li class="dropdown">
+			<a class="dropbtn" href="javascript:void(0)">Analytics</a>
+			<div class="dropdown-content">
+				<a href="#">Link 1</a>
+				<a href="#">Link 2</a>
+				<a href="#">Link 3</a>
+			</div>
+		</li>
+		<li class="dropdown">
+			<a class="dropbtn" href="javascript:void(0)">Products</a>
+			<div class="dropdown-content">
+				<a href="#">Link 1</a>
+				<a href="#">Link 2</a>
+				<a href="#">Link 3</a>
+			</div>
+		</li>
+	</ul>
+<div class="footer">
+  <p>Footer</p>
+</div>	
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+</body>
+	</html>	
