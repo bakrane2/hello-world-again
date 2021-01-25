@@ -1,2 +1,2 @@
 # hello-world-again
-My new repository
+My name is Brian and I am putting together a developer portfolio!
